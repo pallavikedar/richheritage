@@ -1,0 +1,328 @@
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.aboutHead{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: linear-gradient(190deg, #fff49e, #fff700);
+    
+}
+
+.headab{
+   
+    color: rgb(74, 68, 3);
+   
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  
+    cursor: pointer;
+    
+}
+.abcontent{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px
+
+}
+
+.rounded-list {
+    list-style-type: none; 
+    padding-left: 20px;
+    width:auto
+  }
+  
+  .rounded-list li {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 25px;
+  }
+  
+ 
+  .rounded-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(90deg, #bea803, #fff700);
+    border-radius: 1px; /* Rounded corners */
+  }
+  .abimg{
+    height:auto;
+    width:71rem;
+  }
+  .abimg img{
+    height:100%;
+    width:100%;
+  }
+  /* General Container Styling */
+.vision-mission-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 50px;
+  gap: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(255, 217, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(251, 255, 17, 0.2);
+}
+
+/* Icon Styling */
+.icons {
+  background: linear-gradient(180deg, #fff315, #f3d703);
+  color: white;
+  display: inline-block;
+  padding: 15px;
+  height:40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Description Styling */
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+/* General Container */
+.founder-team-container {
+  padding: 50px;
+  background: linear-gradient(360deg, #c2ba28, #f3d703);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+/* Founder Section */
+.founder-section {
+  display: flex;
+ 
+  align-items: center;
+  gap: 30px;
+  background-color:#ffff;
+  height: 300px;
+  padding:30px;
+  margin-bottom: 50px;
+}
+
+
+.founder-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(189, 206, 7, 0.266);
+  border:3px solid #f6ff00
+}
+
+.founder-info {
+  max-width: 600px;
+}
+
+.founder-name {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #333;
+}
+.founder-role {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-top: -13px;
+}
+
+.founder-description {
+  font-size: 1rem;
+  color: #063402;
+  line-height: 1.6;
+}
+/* General Styles for Smaller Screens */
+@media (max-width: 768px) { /* Tablet View */
+  .aboutHead {
+    height: 50px;
+  }
+
+  .headab {
+    font-size: 1.5rem;
+  }
+
+  .abcontent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .abimg{
+    height:auto;
+    width:30rem;
+  }
+  .abimg img{
+    height:100%;
+    width:100%;
+  }
+
+  .rounded-list li {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+
+  .vision-mission-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .founder-team-container {
+    padding: 30px;
+  }
+
+  .founder-section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .founder-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .founder-info {
+    max-width: 100%;
+  }
+
+  .founder-name {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .founder-role {
+    font-size: 1rem;
+    margin-top: -5px;
+    text-align: center;
+  }
+
+  .founder-description {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile View */
+  .aboutHead {
+    height: 40px;
+  }
+
+  .headab {
+    font-size: 1.2rem;
+  }
+
+  .abcontent {
+    padding: 10px;
+  }
+  .abimg{
+    height:auto;
+    width:20rem;
+  }
+  .abimg img{
+    height:100%;
+    width:100%;
+  }
+
+  .rounded-list li {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+
+  .vision-mission-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .icons {
+    padding: 10px;
+    height: 30px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .founder-team-container {
+    padding: 20px;
+  }
+
+  .founder-section {
+    gap: 15px;
+  }
+
+  .founder-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .founder-name {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .founder-role {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .founder-description {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

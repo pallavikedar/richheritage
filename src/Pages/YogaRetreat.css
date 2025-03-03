@@ -1,0 +1,171 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.yoga-retreat {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(360deg, #c2ba28, #f3d703);
+}
+
+.title1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #025b26;
+  margin-bottom: 2rem;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider1 {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+}
+
+.benefit-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 0 0 calc(100% / 3);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon1 {
+  font-size: 3rem;
+  color: #037047;
+  background: linear-gradient(360deg, #c2ba28, #f3d703);
+  padding: 15px;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+}
+
+.benefit-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-desc {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.slider-button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #025b26;
+  transition: color 0.2s;
+}
+
+.slider-button:hover {
+  color: #037047;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .slider1 {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .benefit-card {
+    flex: 0 0 calc(100% / 2 - 1rem);
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  .icon1 {
+    font-size: 2.5rem;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .benefit-title {
+    font-size: 1.2rem;
+  }
+
+  .benefit-desc {
+    font-size: 0.9rem;
+  }
+
+  .slider-button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .slider1 {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .benefit-card {
+    flex: 0 0 100%;
+   
+    margin: 0.5rem 0;
+    padding: 1rem;
+  }
+
+  .icon1 {
+    font-size: 2rem;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .benefit-title {
+    font-size: 1rem;
+  }
+
+  .benefit-desc {
+    font-size: 0.8rem;
+  }
+
+  .slider-button {
+    font-size: 1.2rem;
+  }
+}
