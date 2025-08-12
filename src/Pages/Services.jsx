@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import {
   FaChild,
   FaGlobe,
@@ -22,6 +22,8 @@ import image11 from '../Assets/g11.jpeg';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./ServicesPage.css";
+
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -104,6 +106,7 @@ const services = [
     title: "Yoga Retreats",
     description: "Relax and rejuvenate with our yoga retreats.",
     image: retreat,
+    yoga: "view image"
   },
   {
     icon: <FaChalkboardTeacher />,
@@ -121,6 +124,7 @@ const services = [
 
 const ServicesPage = () => {
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
+  const navigate = useNavigate();
 
   const toggleDropdown = (index) => {
     setOpenDropdownIndex(openDropdownIndex === index ? null : index);
@@ -128,6 +132,11 @@ const ServicesPage = () => {
   const closePopup = () => {
     setOpenDropdownIndex(null);
   };
+  const viewRetreat = () => {
+    navigate("/yoga-retreat");
+  };
+ 
+
 
   return (
     <div className="services-container" id="service">
@@ -142,6 +151,11 @@ const ServicesPage = () => {
               <div className="services-icon">{service.icon}</div>
               <h3 className="services-title">{service.title}</h3>
               <p className="services-description">{service.description}</p>
+              {service.yoga && (
+                <button className="view-course-button" onClick={viewRetreat}>
+                  {service.yoga}
+                </button>
+              )}
               {service.courses && (
                 <>
                   <button
